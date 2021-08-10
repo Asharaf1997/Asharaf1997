@@ -1,0 +1,57 @@
+WAP the year is Leap year or not using function.
+
+
+
+#include<stdio.h>
+
+int Year(int year)
+
+{
+ 
+ 
+  if(year%4==0)
+  
+  {
+   
+   printf("\n The %d year is LEAP Year",year);
+  
+  }
+ 
+  else
+ 
+  {
+   
+  printf("\n The %d year is Not LEAP Year",year);
+
+   }
+
+}
+
+
+ int main()
+
+{
+  
+  int year;
+
+ 
+  printf("Enter year: ");
+  
+  scanf("%d", &year);
+
+  
+   Year(year);
+ 
+
+   return 0;
+
+}
+
+
+
+o/p--
+
+Enter year: 2020
+
+ 
+The 2020 year is LEAP Year

@@ -1,0 +1,36 @@
+1. WAP to check whether a number is even or odd
+
+#include<stdio.h>
+
+
+int main()
+
+{
+ 
+int num;
+ 
+
+ printf("\n Enter the number");
+
+ scanf("%d",&num);
+ 
+
+ if(num%2!=0)
+
+ printf("\n%d is a ODD.",num);
+ 
+ 
+if(num%2==0)
+
+ printf("\n%d ia a EVEN.",num);
+ 
+
+ return 0;
+
+}
+
+0/p--
+Enter the number 30
+30
+
+30 ia a EVEN.

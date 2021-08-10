@@ -1,0 +1,24 @@
+2)WAP to claculate Simple interest.
+
+#include <stdio.h>
+
+
+int main()
+{
+    float A,R,T,SI;
+    A=50000,R=30,T=5;
+    SI=(A*R*T)/100;
+    printf("\n\nSimple interest is:%f",SI);
+    return 0;
+}
+
+0/p--
+
+Simple interest is:75000.000000
+
+
+A=Amount
+R=Rate 
+T=Time/Year
+
+(A*R*T)/100

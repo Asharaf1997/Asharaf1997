@@ -1,0 +1,21 @@
+9. WAP which calculate speed for time and distance.
+Speed=(distance/time)
+
+#include<stdio.h>
+int main()
+{
+	double t,d,speed;
+	printf("\nEnter the Time in Hours  And Distance in KM :\n");
+	scanf("%lf%lf",&t,&d);
+	speed=d/t;
+	printf("\nSpeed:%lf Km/h",speed);
+	
+	return 0;
+}
+
+0/p--
+
+Enter the Time in Hours  And Distance in KM :
+3 700
+
+Speed:233.333333 Km/h

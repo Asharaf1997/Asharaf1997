@@ -1,0 +1,22 @@
+3)WAP to calculate area of rectangle.
+
+#include<stdio.h>
+int main()
+{
+int area,peri,l,w;
+
+printf("\nEnter the lenght and width of rectangle");
+scanf("%d%d",&l,&w);
+
+area=l*w;
+peri=2*(l*w);
+
+printf("\n Area=%d and Perimeter=%d",area,peri);
+
+return 0;
+}
+
+o/p---
+Enter the lenght and width of rectangle 4 6
+
+ Area=24 and Perimeter=48

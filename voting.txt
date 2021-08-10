@@ -1,0 +1,37 @@
+2. WAP to check whether a person is eligible for voting or not.
+
+#include<stdio.h>
+
+int main()
+
+{
+
+ int a;
+
+
+ 
+ printf("\n Enter the person age");
+ 
+ scanf("%d",&a);
+
+ 
+ if(a>=18)
+ 
+   printf("\n Eligible for voting");
+
+ 
+ else
+
+  printf("\n Not eligible for voting");
+
+
+ return 0;
+
+}
+
+0/p--
+
+Enter the person age 20
+20
+
+ Eligible for voting

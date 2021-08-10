@@ -1,0 +1,60 @@
+8) Perform following operations on two matrices with order  p*q.
+
+2. Multiplication of two matrix
+
+#include<stdio.h>
+void main(){
+    int a[10][10],b[10][10],sum[10][10],i,j,max,maxr,maxc;
+    printf("enter the element in matrix p: \n");
+    for(i=0;i<2;i++){
+        for(j=0;j<2;j++)
+            scanf("%d",&a[i][j]);
+    }
+    printf("\nenter the element in matrix q: \n");
+    for(i=0;i<2;i++){
+        for(j=0;j<2;j++)
+            scanf("%d",&b[i][j]);
+    }
+
+    printf("Matrix p is:\n");
+    for(i=0;i<2;i++){
+        for(j=0;j<2;j++)
+            printf("%d\t",a[i][j]);
+        printf("\n");
+    }
+    printf("Matrix q is:\n");
+    for(i=0;i<2;i++){
+        for(j=0;j<2;j++)
+            printf("%d\t",b[i][j]);
+        printf("\n");
+    }
+
+    for(i=0;i<2;i++){
+        for(j=0;j<2;j++)
+            sum[i][j]=a[i][j]*b[i][j];
+    }
+    printf("Addition of matrix p*q is:\n");
+    for(i=0;i<2;i++){
+        for(j=0;j<2;j++){
+            printf("%d\t",sum[i][j]);  
+        }
+        printf("\n");
+    }
+}
+
+o/p--
+
+enter the element in matrix p: 
+4 7 5 8
+enter the element in matrix q: 
+5 8 3 6
+Matrix p is:
+4	7	
+5	8	
+Matrix q is:
+5	8	
+3	6	
+Addition of matrix p*q is:
+20	56	
+15	48	
+

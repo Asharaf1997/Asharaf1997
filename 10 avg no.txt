@@ -1,0 +1,56 @@
+1) WAP to calculate average marks of a 10 students.
+
+#include<stdio.h> 
+void main()
+{
+
+int arr[10];
+int i;
+int sum=0,avg=0;
+ 
+
+printf("\n Enter 10 numbers : \n\n");
+ 
+ for(i = 0; i<10;i++) 
+ {
+      printf("Enter no. %d   : \n",i+1);
+      scanf("%d",&arr[i]);
+ }
+ 
+ for(i = 0; i<10;i++) 
+  {
+    sum = sum + arr[i];   
+  }
+
+ avg = sum/10;
+ printf("Average : %d",avg);
+ 
+    
+}
+
+
+o/p--
+
+Enter 10 numbers : 
+
+Enter no. 1   : 
+70
+Enter no. 2   : 
+55
+Enter no. 3   : 
+68
+Enter no. 4   : 
+46
+Enter no. 5   : 
+88
+Enter no. 6   : 
+66
+Enter no. 7   : 
+99
+Enter no. 8   : 
+66
+Enter no. 9   : 
+78
+Enter no. 10   : 
+56
+Average : 69

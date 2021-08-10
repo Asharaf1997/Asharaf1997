@@ -1,0 +1,71 @@
+3) WAP to find greatest number in an array.
+
+
+
+#include<stdio.h>
+
+
+int main()
+
+{
+
+
+  int a[20],i,n,gret;
+
+    
+
+printf("\nEnter the array elemenents in the list");
+	
+scanf("%d",&n);
+
+  	
+
+printf("\nEnter array elemenets");
+  
+	for(i=0;i<n;i++)
+   
+	scanf("%d",&a[i]);
+  	
+                gret=a[0];
+
+  	
+                for(i=0;i<n;i++)
+ 	
+             {
+
+   	if(a[i] > gret)
+  
+ 	{
+   
+                 gret = a[i];
+   
+	}
+ 	
+            }
+  
+   printf("\nThe gretest element is=%d",gret);
+
+   
+return 0;
+
+}
+
+
+
+o/p---
+
+Enter the array elemenents in the list 5
+
+   
+
+
+Enter array elemenets
+10 
+6 
+5 
+4 
+13
+
+
+
+The gretest element is=13

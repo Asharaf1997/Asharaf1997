@@ -1,0 +1,95 @@
+4. WAP to check whether a number is Armstrong number using function
+
+.
+
+#include<stdio.h>
+
+
+int arm(int num)
+
+{
+
+
+int i,original,rem,result=0;
+
+ 
+
+  original = num;
+ 
+ 
+  while(original != 0)
+
+  {
+   
+    rem=original%10;
+ 
+  
+   original=original /10;
+
+
+  
+  result =result+(rem*rem*rem);
+  
+
+
+  }
+
+    
+    if(result == num)
+   
+     printf("\n\n%d is Armstrong number",num);
+ 
+    else 
+       
+    printf("\n\n%d is Not Armstrong number",num);
+ 
+
+ }
+  
+
+
+  int main()
+
+ {
+
+   int num;
+
+  printf("\nEnter the Armstrong number ");
+
+  scanf("%d",&num);
+
+  arm(num);
+
+
+  
+  return 0;
+
+ }
+
+
+
+/*o/p--
+
+
+
+1)Enter the Armstrong number 371
+
+ 
+
+371 is Armstrong number
+
+
+ 
+2)Enter the Armstrong number 1
+
+
+
+ 1 is Armstrong number
+
+
+
+3)Enter the Armstrong number 234
+
+
+
+ 234 is Not Armstrong number*/

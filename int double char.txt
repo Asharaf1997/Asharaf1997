@@ -1,0 +1,58 @@
+/*1. Write a program that declares a double, an int, and char variables. Next declare and initialize
+a pointer to each of the three variables. Your program should then print the address of, and
+value stored in.*/
+
+#include<stdio.h>
+void main()
+{
+    int a=10;
+    char b='B';
+    double c=30;
+    
+    int* p;
+    double *r;
+    char* q;
+    
+    p=&a;
+    q=&b;
+    r=&c;
+
+    printf("address of a = %u\n",&a);
+    printf("address of b = %u\n",&b);
+     printf("address of c = %u\n",&c);
+    printf("address of *p = %u\n",&p);
+    printf("address of *q = %u\n",&q);
+    printf("address of *r = %u\n\n",&r);
+    
+    printf("value of a = %d\n",a);
+    printf("value of b = %c\n",b);
+    printf("value of c = %lf\n",c);
+    printf("value of *p = %d\n",*p);
+    printf("value of *q = %c\n",*q);
+    printf("value of *r = %lf\n",*r);
+
+    printf("p store address of a = %u\n",p);
+    printf("q store address of b = %u\n",q);
+    printf("r store address of c = %u\n",r);
+}
+
+
+o/p--
+
+address of a = 4058783012
+address of b = 4058783011
+address of c = 4058783016
+address of *p = 4058783024
+address of *q = 4058783040
+address of *r = 4058783032
+
+value of a = 10
+value of b = B
+value of c = 30.000000
+value of *p = 10
+value of *q = B
+value of *r = 30.000000
+p store address of a = 4058783012
+q store address of b = 4058783011
+r store address of c = 4058783016
+

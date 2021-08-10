@@ -1,0 +1,15 @@
+1)Write a program to print Hello World on output screen.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("Hello world!\n");
+    return 0;
+}
+
+
+o/p---
+
+Hello world!

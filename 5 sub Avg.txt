@@ -1,0 +1,30 @@
+8. WAP to accept five subject marks and find out total and average of the marks.
+
+#include<stdio.h>
+
+int main()
+
+{
+
+double n1,n2,n3,n4,n5,avg;
+
+
+printf("\nEnter the 5 number");
+
+scanf("%lf%lf%lf%lf%lf",&n1,&n2,&n3,&n4,&n5);
+
+
+avg=(n1+n2+n3+n4+n5)/5;
+
+printf("/nAverage=%lf",avg);
+
+
+return 0;
+}
+
+0/p--
+
+Enter the 5 number 77 89 66 88 76
+77 89 66 88 76
+
+Average=79.200000

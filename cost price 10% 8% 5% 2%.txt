@@ -1,0 +1,77 @@
+3. WAP to accept Cost Price from user and ask whether the user is a student or not. If the user
+is student and cost price is greater than 500, give discount of 10% ELSE discount will be 5%. If
+user is not student and cost price is greater 500 then give discount of 8% ELSE discount will be
+2%. (Take all inputs from USER)
+
+#include<stdio.h>
+int main(){
+	float cp,discount,amountToBePaid;
+	int user;
+	printf("\nEnter the cost price :\n");
+	scanf("%f",&cp);
+
+	printf("\nEnter the user is student or not (put the 1 for Student else 0):\n");
+	scanf("%d",&user);
+
+	if(user==1){
+		if(cp>=500)
+        {
+            discount = (cp*10)/100;
+            amountToBePaid = cp-discount;
+			printf("u got the 10%% discount for:%f",amountToBePaid);
+        }
+		else
+        {
+            discount = (cp*5)/100;
+            amountToBePaid = cp-discount;
+			printf("u got the 5%% discount for:%f",amountToBePaid);
+        }
+	}
+	else{
+		if(cp>=500)
+        {
+            discount = (cp*8)/100;
+            amountToBePaid = cp-discount;
+			printf("u got the 8%% discount for:%f\n",amountToBePaid);
+        }
+		else
+        {
+            discount = (cp*2)/100;
+            amountToBePaid = cp-discount;
+			printf("u got the 2%% discount for:%f\n",amountToBePaid);
+        }
+	}
+	return 0;
+}
+
+
+
+0/p--
+
+1)Enter the cost price :
+600
+
+Enter the user is student or not (put the 1 for Student else 0):
+1
+u got the 10% discount for:540.000000
+
+2)Enter the cost price :
+400
+
+Enter the user is student or not (put the 1 for Student else 0):
+1
+u got the 5% discount for:380.000000
+
+Enter the cost price :
+300
+
+Enter the user is student or not (put the 1 for Student else 0):
+0
+u got the 2% discount for:294.000000
+
+4)Enter the cost price :
+700
+
+Enter the user is student or not (put the 1 for Student else 0):
+0
+u got the 8% discount for:644.000000

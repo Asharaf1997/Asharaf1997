@@ -1,0 +1,45 @@
+4. WAP to check whether Number is positive or negative or ZERO.
+
+#include<stdio.h>
+
+
+int main()
+
+{
+
+ int num;
+
+ 
+ printf("\nEnter any number");
+ 
+ scanf("%d",&num);
+ 
+
+ 
+ if(num>0)
+
+ printf("%d is positive number",num);
+ 
+
+
+ else if(num<0)
+
+ printf("%d is negative number",num);
+ 
+
+ 
+ else
+ 
+ printf("%d is a zero",num);
+
+ 
+
+return 0;
+ 
+}
+
+0/p--
+
+Enter any number -8
+-8
+-8 is negative number

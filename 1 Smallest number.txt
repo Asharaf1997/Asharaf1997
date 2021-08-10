@@ -1,0 +1,61 @@
+4) WAP to find smallest number in an array.
+
+
+.
+
+#include<stdio.h>
+
+
+int main()
+
+{
+
+	
+  int a[20],i,n,min;
+
+ 
+    printf("\nEnter the array elemenents in the list");
+	
+   scanf("%d",&n);
+
+  	
+   
+   printf("\nEnter array elemenets");
+  	
+   for(i=0;i<n;i++)
+   	
+   scanf("%d",&a[i]);
+  
+ 	 min=a[0];
+
+  
+	for(i=0;i<n;i++)
+ 	
+             {
+   
+               	if(a[i] < min)
+   
+ 	{
+   	
+                 min = a[i];
+   
+ 	}
+ 	
+            }
+  
+   printf("\nThe smalllest element is=%d",min);
+ 
+return 0;
+
+}
+
+
+
+o/p---
+
+Enter the array elemenents in the list5
+
+
+Enter array elemenets6 4 3 5 6
+
+The smalllest element is=3

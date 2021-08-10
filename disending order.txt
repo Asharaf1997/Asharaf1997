@@ -1,0 +1,52 @@
+/*2) b)WAP to sort array in disending order.*/
+
+#include<stdio.h>
+void main(){
+    int a[100],n,i,j,t;
+    printf("enter the no of array:\n");
+    scanf("%d",&n);
+    printf("enter no :\n");
+    
+    for(i=0;i<n;i++)
+    {
+      scanf("%d",&a[i]);
+    }
+    printf("Array is :\n");
+   
+    for(i=0;i<n;i++)
+    {
+        printf("%d\t",a[i]);
+    }
+    for(i=0;i<n;i++)
+   {
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i]<a[j])
+            {
+                t=a[i];
+                a[i]=a[j];
+                a[j]=t;
+            }
+        }
+    }
+    printf("\ndicending array is :\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%d\t",a[i]);
+    }
+}
+
+o/p--
+
+enter the no of array:
+5
+enter no :
+3
+6
+8
+9
+3
+Array is :
+3	6	8	9	3	
+dicending array is :
+9	8	6	3	3	

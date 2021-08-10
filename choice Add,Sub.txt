@@ -1,0 +1,64 @@
+2. WAP using switch case for arithmetic operation on two numbers, if user enters an operator as
+choice, the appropriate operation should perform.
+If user enters wrong choice appropriate message should get displayed.
+i.e. + is for addition
+     - is for subtraction
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    int ch;
+    
+    printf("\n Enter Choice '1' for ADDITION OR '2' for SUBSTRACTION");
+    
+    printf("\nEnter the choice:");
+    scanf("%d",&ch);
+    
+    switch(ch)
+    { 
+    case 1 :
+    {
+    printf("\nEnter the Addition of a and b is");
+    scanf("%d%d",&a,&b);
+        
+    printf("\nThe Addition is %d",a+b);
+    
+    break;
+    }
+       
+    case 2 :
+    {
+    printf("\nEnter the Subtraction of a and b is");
+    scanf("%d%d",&a,&b);
+        
+    printf("\nThe Subtracion is %d",a-b);
+    
+    break;
+    }
+    
+    
+     default:
+     printf("\n The wrong choice");
+     break;
+    } 
+    return 0;
+}
+
+
+/*0/p--
+1)Enter Choice '1' for ADDITION OR '2' for SUBSTRACTION
+Enter the choice:1
+
+Enter the Addition of a and b is 2 6
+2 6
+
+The Addition is 8
+
+2)Enter Choice '1' for ADDITION OR '2' for SUBSTRACTION
+Enter the choice:2
+
+Enter the Subtraction of a and b is 8 4
+8 4
+
+The Subtracion is 4
+*/

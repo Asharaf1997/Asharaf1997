@@ -1,0 +1,65 @@
+5) WAP to multiply a 3*3 matrix.
+
+#include<stdio.h>
+void main(){
+    int a[10][10],b[10][10],mul[10][10],sum=0,i,k,j;
+    printf("Enter the A matrix 3*3 : \n");
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++)
+            scanf("%d",&a[i][j]);
+    }
+    printf("\nenter the B Matrix 3*3 : \n");
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++)
+            scanf("%d",&b[i][j]);
+    }
+
+    printf("Matrix A is:\n");
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++)
+            printf("%d\t",a[i][j]);
+        printf("\n");
+    }
+    printf("Matrix B is:\n");
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++)
+            printf("%d\t",b[i][j]);
+        printf("\n");
+    }
+
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+
+            for(k=0;k<3;k++){
+                sum=sum+a[i][k]*b[k][j];
+            }
+            mul[i][j]=sum;
+            sum=0;
+        }
+    }
+    printf("\nMultiplication of Matrix :\n");
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++)
+            printf("%d\t",mul[i][j]);
+        printf("\n");
+    }
+}
+
+Enter the A matrix 3*3 :
+9 5 7 5 3 7 5 9 3
+
+enter the B Matrix 3*3 :
+4 7 9 5 2 7 9 5 6
+Matrix A is:
+9       5       7
+5       3       7
+5       9       3
+Matrix B is:
+4       7       9
+5       2       7
+9       5       6
+
+Multiplication of Matrix :
+124     108     158
+98      76      108
+92      68      126

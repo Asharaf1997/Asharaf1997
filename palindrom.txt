@@ -1,0 +1,76 @@
+5. WAP to check whether a number is palindrome or not using function.
+   
+
+    #include<stdio.h>  
+    
+
+    int palindrom(int n)
+  
+    {
+   
+     int r,sum=0,temp;
+  
+  
+    temp=n;    
+  
+
+    while(n>0)    
+  
+    {    
+  
+      r=n%10;    
+ 
+     sum=(sum*10)+r;    
+ 
+       n=n/10;    
+ 
+     }    
+  
+
+     if(temp==sum)    
+
+
+     printf("palindrome number ");    
+  
+ 
+    else    
+
+     printf("is not palindrome");  
+ 
+   }
+   
+ 
+
+   int main()    
+ 
+   {    
+
+     int n;   
+
+    printf("enter the number=");    
+ 
+   scanf("%d",&n);    
+
+    palindrom(n);
+    
+
+    return 0;  
+
+    }  
+ 
+    
+
+ 
+   o/p--
+   
+
+ 
+    1) enter the number= 181
+     
+       palindrome number
+      
+
+
+    2) enter the number=321
+     
+        is not palindromep
